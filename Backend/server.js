@@ -11,8 +11,12 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:5174'],
-  methods: ['GET', 'POST', 'PATCH', 'PUT', 'DELETE'], // ✅ Added 'PATCH'
+  origin: [
+    'http://localhost:5173',
+    'http://localhost:5174',
+    'https://college-complaint-registration-syst-mu.vercel.app'
+  ],
+  methods: ['GET', 'POST', 'PATCH', 'PUT', 'DELETE'],
   credentials: true
 }));
 app.use(express.json());
