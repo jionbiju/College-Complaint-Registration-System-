@@ -1,0 +1,118 @@
+ 
+.complaint-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.complaint-form-container h2 {
+  color: #333;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.complaint-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .complaint-form-container {
+    padding: 0;
+  }
+
+  .complaint-form-container h2 {
+    font-size: 1.5rem;
+  }
+} 
+ 
+/* Add these classes to your App.css */
+
+/* Status Messages */
+.status-message {
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 15px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.status-message.success {
+  background-color: #e6ffed; /* Light green background */
+  color: #1a5632; /* Dark green text */
+  border: 1px solid #b7e9c5;
+}
+
+.status-message.error {
+  background-color: #fff0f5; /* Light red/pink background */
+  color: #a00d3c; /* Dark red text */
+  border: 1px solid #f9c0d1;
+}
+
+/* Disabled State for Button */
+.submit-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
