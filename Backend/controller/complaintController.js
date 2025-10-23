@@ -1,4 +1,3 @@
-// controllers/complaintController.js
 const Complaint = require('../models/Complaint');
 
 // Get all complaints

@@ -1,4 +1,3 @@
-// src/App.jsx
 import React, { useState, useEffect } from 'react';
 import ComplaintForm from './components/ComplaintForm/ComplaintForm.jsx';
 import ComplaintList from './components/ComplaintList/ComplaintList.jsx';

@@ -1,4 +1,3 @@
-// server.js
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -11,7 +10,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: '*',
+  origin: '*', 
   methods: ['GET', 'POST', 'PATCH', 'PUT', 'DELETE']
 }));
 app.use(express.json());
@@ -28,7 +27,7 @@ mongoose.connect(process.env.MONGODB_URI,{
 // Routes
 app.use('/api/complaints', complaintRoutes);
 
-// Test Route
+
 app.get('/', (req, res) => {
   res.json({ message: 'College Complaint System API' });
 });
